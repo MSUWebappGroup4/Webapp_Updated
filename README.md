@@ -33,12 +33,25 @@ Once you are in the same folder in the app you are able, make sure that all of y
 #bundle install
 #rails db:migrate
 ```
-### Running in Rails
+If you were making a new app here are some useful commands
+```
+rails generate scaffold [Name of scaffold] [NAME:DATA TYPE]
+```
+- Generates controller for the DB, +DB table with each added variable. YOU MUST follow up with db migrate.
+```
+-# rails destroy scaffold [Name of scaffold]
+```
+- Destroy the scaffold that you named.
+
+
+## Running in Rails
 Once you have your DB updated and your gems installed you should be able to run the server.
 ```
 #rails server -b 0.0.0.0
 ```
 Now that you have the server running you should be able to go to either of these links...
+- [http://localhost:3000/](http://localhost:3000/)
+- [[http://localhost:3000/students/sign_in](http://localhost:3000/students/sign_in)]
 
-[http://localhost:3000/]
-[http://localhost:3000/routs]
+
+
