@@ -30,8 +30,8 @@ Whe we are working on your app you will need to add the folder that has your app
 ```
 Once you are in the same folder in the app you are able, make sure that all of your gems are installed and your database is built.
 ```
-#bundle install
-#rails db:migrate
+bundle install
+rails db:migrate
 ```
 If you were making a new app here are some useful commands
 ```
@@ -39,7 +39,7 @@ rails generate scaffold [Name of scaffold] [NAME:DATA TYPE]
 ```
 - Generates controller for the DB, +DB table with each added variable. YOU MUST follow up with db migrate.
 ```
--# rails destroy scaffold [Name of scaffold]
+rails destroy scaffold [Name of scaffold]
 ```
 - Destroy the scaffold that you named.
 
@@ -51,7 +51,7 @@ Once you have your DB updated and your gems installed you should be able to run 
 ```
 Now that you have the server running you should be able to go to either of these links...
 - [http://localhost:3000/](http://localhost:3000/)
-- [[http://localhost:3000/students/sign_in](http://localhost:3000/students/sign_in)]
+- [http://localhost:3000/students/sign_in](http://localhost:3000/students/sign_in)
 
 
 
