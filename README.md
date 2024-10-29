@@ -8,12 +8,12 @@ To first start we need to make our docker image and build.
 
 ### Code commands in order from this point.
 ```
-- docker buildx build -t <Docker username>/<Image name> .
-- docker run -it -p 3000:3000 -v ${PWD}:/workspace <Docker username>/<Image name>
+docker buildx build -t <Docker username>/<Image name> .
+docker run -it -p 3000:3000 -v ${PWD}:/workspace <Docker username>/<Image name>
 ```
 If for some reason you are getting a Metadata error clear the docker config
 ```
-- rm  ~/.docker/config.json 
+rm  ~/.docker/config.json 
 ```
 Helpful docker commands
 ```
@@ -33,3 +33,12 @@ Once you are in the same folder in the app you are able, make sure that all of y
 #bundle install
 #rails db:migrate
 ```
+### Running in Rails
+Once you have your DB updated and your gems installed you should be able to run the server.
+```
+#rails server -b 0.0.0.0
+```
+Now that you have the server running you should be able to go to either of these links...
+
+[http://localhost:3000/]
+[http://localhost:3000/routs]
