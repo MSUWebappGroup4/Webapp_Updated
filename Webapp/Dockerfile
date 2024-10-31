@@ -2,7 +2,7 @@
 
 # Define the Ruby version to use in the image
 ARG RUBY_VERSION=3.2.5
-FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim as base
+FROM registry.docker.com/library/ruby:$RUBY_VERSION-slim AS base
 
 # Expose port 3000 for the Rails server
 EXPOSE 3000
