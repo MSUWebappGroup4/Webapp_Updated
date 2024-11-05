@@ -22,7 +22,17 @@ docker stop <CONTAINER_NAME> (Stop a docker container)
 docker restart <CONTAINER_NAME> (Remote restarts the container)
 docker exec -it <CONTAINER_NAME> /bin/sh (Opens a terminal for a running docker container)
 ```
-
+## Database
+The database is the core of the web app where we are able to find
+```
+db:create
+db:drop
+db:migrate
+db:reset
+db:rollback
+db:seed
+db:seed:replant
+```
 ## Portfolio Setup
 Whe we are working on your app you will need to add the folder that has your app into your workspace at your folder, not in the docker. Once the files are moved you should be able to see it in your active workspace.
 ```
@@ -52,6 +62,7 @@ Once you have your DB updated and your gems installed you should be able to run 
 Now that you have the server running you should be able to go to either of these links...
 - [http://localhost:3000/](http://localhost:3000/)
 - [http://localhost:3000/students/sign_in](http://localhost:3000/students/sign_in)
+- [http://localhost:3000/rails/info/routes](http://localhost:3000/rails/info/routes)
 
 
 
