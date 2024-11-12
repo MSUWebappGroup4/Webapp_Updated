@@ -53,6 +53,8 @@ rails destroy scaffold [Name of scaffold]
 ```
 - Destroy the scaffold that you named.
 
+## Testing
+When running rails we can make testing based on the requirments that we are looking for from our web app.
 
 ## Running in Rails
 Once you have your DB updated and your gems installed you should be able to run the server.
